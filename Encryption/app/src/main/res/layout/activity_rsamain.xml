@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.hy.features.encryption.EncryptionActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RSA加密解密功能测试"
+        android:textSize="24dip"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dip"/>
+
+    <EditText
+        android:id="@+id/input_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入需加密的内容" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/encryption_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加密" />
+
+        <Button
+            android:id="@+id/decryption_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="解密" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/output_encrycontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="加密后的内容" />
+
+    <EditText
+        android:id="@+id/output_decrycontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="解密后的内容" />
+
+</LinearLayout>
